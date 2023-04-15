@@ -27,6 +27,7 @@ namespace Core.Figures
             get
             {
                 var p = (_a + _b + _c) / 2;
+                // Using Heron's formula
                 return Math.Sqrt(p * (p - _a) * (p - _b) * (p - _c));
             }
         }
