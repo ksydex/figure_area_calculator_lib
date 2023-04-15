@@ -6,6 +6,8 @@
 
 ## Solution
 
+[DB Fiddle with an example](https://www.db-fiddle.com/f/uEdMvr3QdL1oRoeeQx8BnN/1)
+
 ### SQL Query #1
 
 Creates 3 tables and inserts basic test data
