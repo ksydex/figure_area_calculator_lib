@@ -5,11 +5,13 @@
         <id>Ksydex.Figure</id>
 
         <!-- Package version number that is used when resolving dependencies -->
-        <version>1.0.0</version>
+        <version>1.0.4</version>
 
         <!-- Authors contain text that appears directly on the gallery -->
         <authors>Lukyanov Artyom</authors>
 
+        <readme>docs\README.md</readme>
+        
         <!-- 
             Owners are typically nuget.org identities that allow gallery
             users to easily find other packages by the same owners.  
@@ -49,11 +51,15 @@
 
         <!-- Dependencies are automatically installed when the package is installed -->
         <dependencies>
+            <group targetFramework=".NETStandard2.0">
+            </group>
         </dependencies>
     </metadata>
 
-    <!-- A readme.txt to display when the package is installed -->
     <files>
-        <file src="icon.png" target="" />
+        <file src="README.md" target="docs\" />
+        <file src="icon.png" target=""/>
+        <file src="Ksydex.Figure\bin\Release\netstandard2.0\Ksydex.Figure.dll" target="lib\netstandard2.0\Ksydex.Figure.dll"/>
+        <file src="Ksydex.Figure\bin\Release\netstandard2.0\Ksydex.Figure.pdb" target="lib\netstandard2.0\Ksydex.Figure.pdb"/>
     </files>
 </package>
