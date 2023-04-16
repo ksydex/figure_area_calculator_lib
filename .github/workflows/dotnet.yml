@@ -25,9 +25,9 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test --no-build --logger "trx;LogFileName=test-results.trx"
     - name: Upload test results
       uses: actions/upload-artifact@v2
       with:
         name: Test Results
-        path: "**/test-results.trx"
+        path: "**/testresults.trx"
