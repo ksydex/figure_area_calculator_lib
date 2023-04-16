@@ -2,6 +2,8 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
+        <AssemblyName>Ksydex.Figure</AssemblyName>
+        <RootNamespace>Ksydex.Figure</RootNamespace>
     </PropertyGroup>
 
 </Project>

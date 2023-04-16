@@ -1,7 +1,7 @@
 using System;
-using Core.Interfaces;
+using Ksydex.Figure.Interfaces;
 
-namespace Core.Figures
+namespace Ksydex.Figure.Figures
 {
     /// <summary>
     /// Represents a circle with a radius and an area.

@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Core.Figures;
-using Core.Interfaces;
+using Ksydex.Figure.Figures;
+using Ksydex.Figure.Interfaces;
 using Xunit;
 
 namespace Tests.Unit

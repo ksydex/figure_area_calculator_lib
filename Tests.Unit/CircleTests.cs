@@ -1,5 +1,5 @@
 using System;
-using Core.Figures;
+using Ksydex.Figure.Figures;
 using Xunit;
 
 namespace Tests.Unit

@@ -1,4 +1,4 @@
-namespace Core.Interfaces
+namespace Ksydex.Figure.Interfaces
 {
     /// <summary>
     /// Represents a geometric figure with an area.
