@@ -1,7 +1,9 @@
 # FigureAreaCalculator
 
+![Build and test workflow](https://github.com/ksydex/figure_area_calculator_lib/actions/workflows/dotnet.yml/badge.svg)
 [![NuGet](https://img.shields.io/nuget/v/Ksydex.Figure.svg)](https://www.nuget.org/packages/Ksydex.Figure/)
 [![NuGet Downloads](https://img.shields.io/nuget/dt/Ksydex.Figure.svg)](https://www.nuget.org/packages/Ksydex.Figure/)
+
 
 The `Ksydex.Figure` namespace provides classes for representing various geometric figures, including triangles and circles.
 
