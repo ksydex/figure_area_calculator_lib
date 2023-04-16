@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{9026321F-718C-4E66-B6A9-9306670BB037}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ksydex.Figure", "Ksydex.Figure\Ksydex.Figure.csproj", "{9026321F-718C-4E66-B6A9-9306670BB037}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.Unit", "Tests.Unit\Tests.Unit.csproj", "{9A7623F4-20EB-4E38-AF6F-BB19CAC5382E}"
 EndProject
