@@ -12,6 +12,45 @@ namespace Ksydex.Figure.Figures
         private readonly double _b;
         private readonly double _c;
 
+
+        /// <summary>
+        /// Gets the area of the triangle using Heron's formula.
+        /// </summary>
+        public double Area
+        {
+            get
+            {
+                var p = (_a + _b + _c) / 2;
+                return Math.Sqrt(p * (p - _a) * (p - _b) * (p - _c));
+            }
+        }
+
+        // A small value used for floating point comparison
+        private const double Epsilon = 0.0000001;
+        
+        /// <summary>
+        /// Returns a value indicating whether the triangle is a right angled triangle.
+        /// </summary>
+        /// <remarks>
+        /// A triangle is a right angle triangle if one of its angles is a right angle, or if the Pythagorean
+        /// theorem is satisfied (i.e., a^2 + b^2 = c^2).
+        /// </remarks>
+        public bool IsRightAngled
+        {
+            get
+            {
+                // Calculate the squares of the lengths of the sides
+                var a2 = Math.Pow(_a, 2);
+                var b2 = Math.Pow(_b, 2);
+                var c2 = Math.Pow(_c, 2);
+
+                // Check if any two sides have lengths that satisfy the Pythagorean theorem
+                return Math.Abs(a2 + b2 - c2) < Epsilon ||
+                       Math.Abs(a2 + c2 - b2) < Epsilon ||
+                       Math.Abs(b2 + c2 - a2) < Epsilon;
+            }
+        }
+
         /// <summary>
         /// Initializes a new instance of the <see cref="Triangle"/> class with the specified side lengths.
         /// </summary>
@@ -30,18 +69,6 @@ namespace Ksydex.Figure.Figures
             _a = a;
             _b = b;
             _c = c;
-        }
-
-        /// <summary>
-        /// Gets the area of the triangle using Heron's formula.
-        /// </summary>
-        public double Area
-        {
-            get
-            {
-                var p = (_a + _b + _c) / 2;
-                return Math.Sqrt(p * (p - _a) * (p - _b) * (p - _c));
-            }
         }
     }
 }

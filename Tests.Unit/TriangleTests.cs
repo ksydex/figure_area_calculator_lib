@@ -47,5 +47,24 @@ namespace Tests.Unit
             // Assert: check that an ArgumentException is thrown when creating a Triangle object with invalid side lengths
             Assert.Throws<ArgumentException>(() => new Triangle(a, b, c));
         }
+        
+        /// <summary>
+        /// Tests the <see cref="Triangle.IsRightAngled"/> getter with sets of sides.
+        /// </summary>
+        /// <param name="a">The length of side a.</param>
+        /// <param name="b">The length of side b.</param>
+        /// <param name="c">The length of side c.</param>
+        /// <param name="expectedIsRightAngled">The expected result of the <see cref="Triangle.IsRightAngled"/> getter.</param>
+        [Theory]
+        [InlineData(3, 4, 5, true)] // Right angled triangle
+        [InlineData(5, 12, 13, true)] // Right angled triangle
+        [InlineData(8, 15, 17, true)] // Right angled triangle
+        [InlineData(5, 5, 5, false)] // Equilateral triangle
+        [InlineData(3, 3, 5, false)] // Not a right angled triangle
+        public void IsRightAngled_ReturnsExpectedResult(double a, double b, double c, bool expectedIsRightAngled)
+        {
+            var triangle = new Triangle(a, b, c);
+            Assert.Equal(expectedIsRightAngled, triangle.IsRightAngled);
+        }
     }
 }

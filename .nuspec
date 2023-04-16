@@ -5,7 +5,7 @@
         <id>Ksydex.Figure</id>
 
         <!-- Package version number that is used when resolving dependencies -->
-        <version>1.0.5</version>
+        <version>1.0.6</version>
 
         <!-- Authors contain text that appears directly on the gallery -->
         <authors>Lukyanov Artyom</authors>
@@ -35,7 +35,7 @@
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
 
         <!-- Any details about this particular release -->
-        <releaseNotes>Added a bit of docs</releaseNotes>
+        <releaseNotes>Added Triangle.IsRightAngled getter</releaseNotes>
 
         <!-- 
             The description can be used in package manager UI. Note that the

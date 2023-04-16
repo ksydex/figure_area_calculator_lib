@@ -49,6 +49,7 @@ Represents a triangle.
 #### Properties
 
 -   `Area` (double): Gets the area of the triangle.
+-   `IsRightAngled` (bool): Gets a value indicating whether the triangle is a right angled triangle.
 
 #### Exceptions
 
